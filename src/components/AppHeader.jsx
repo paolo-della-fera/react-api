@@ -1,9 +1,18 @@
-export default function AppHeader(){
+export default function AppHeader() {
 
 
-  return (
-    <header> 
-      Header
-    </header>
-  )
+    return (
+        <>
+
+            <div className="container">
+
+                <header>
+                    <p className="text-center fw-semibold">Wonderful Cast</p>
+                </header>
+
+            </div>
+
+        </>
+
+    )
 }
