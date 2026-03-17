@@ -23,21 +23,33 @@ export default function AppMain() {
 
             <div className="container">
 
-                <main>
-                    <h1 className="text-center mt-5 mb-0 fw-bold">Actors</h1>
+                <main className="mt-4">
+                    <h1 className="text-center mb-0 fw-bold">Actors</h1>
                     <p className="text-center">List of actors fetched from an Api</p>
 
                     {/* actors card */}
+                    <div className="row g-3">
 
-                    <div className="card">
-                        <h3 className="card-title fw-bold">Nome</h3>
-                        <div className="card-body">
-                            <img src="" className="card-img-top" alt="...">
-                            <p className="card-text">anno <span>nazionalità</span></p>
-                            <p className="card-text">biografia</p>
-                            <p className="card-text">riconoscimenti</p>
+                        {actors.map((actor) => (
+                            <div className="col-12 col-md-6 col-lg-4" key={actor.id}>
+                                <div className="card">
+                                    <h3 className="card-title fw-bold text-center pt-3">{actor.name}</h3>
 
-                        </div>
+                                    <div className="card-body pt-0">
+                                        <img src={actor.image} className="card-img-top" alt={actor.name} />
+
+                                        <p className="card-text text-center fst-italic">
+                                            {actor.birth_year} <span>{actor.nationality}</span>
+                                        </p>
+
+                                        <p className="card-text text-center">{actor.biography}</p>
+
+                                        <p className="card-text text-center awards"><b>Awards</b>: <br /> {actor.awards.join(", ")}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+
                     </div>
 
                 </main>

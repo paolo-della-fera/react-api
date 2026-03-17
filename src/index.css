@@ -5,3 +5,52 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --sfondo: #1e1e2f;
+  --colorWord: white;
+  --awardsColor: #daa420;
+}
+
+
+/* #region Header */
+
+header {
+  background-color: var(--sfondo);
+  color: var(--colorWord)
+}
+
+/* #endregion Header */
+
+
+/* #region Main */
+
+.card {
+  background-color: var(--sfondo);
+  color: var(--colorWord);
+  height: 100%;
+
+  .awards {
+    color: var(--awardsColor);
+  }
+}
+
+.card-img-top {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+/* #endregion Main */
+
+
+/* #region Footer */
+
+footer {
+  background-color: var(--sfondo);
+  color: var(--colorWord);
+}
+
+/* #endregion Footer */
