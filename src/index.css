@@ -10,6 +10,7 @@
   --sfondo: #1e1e2f;
   --colorWord: white;
   --awardsColor: #daa420;
+  --popularFilms: #f85b43;
 }
 
 
@@ -32,6 +33,10 @@ header {
 
   .awards {
     color: var(--awardsColor);
+  }
+
+  .most_popular_films {
+    color: var(--popularFilms);
   }
 }
 

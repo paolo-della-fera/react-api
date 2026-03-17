@@ -42,8 +42,13 @@ export default function AppMain() {
                                         </p>
 
                                         <p className="card-text text-center">{actor.biography}</p>
-                                        
-                                        <p className="card-text text-center awards">
+
+                                        <p className="card-text text-center most_popular_films">
+                                            <b className="fst-italic">Known For:</b> <br />
+                                            {actor.most_famous_movies ? actor.most_famous_movies.join(", ") : actor.known_for.join(", ")}
+                                        </p>
+
+                                        <p className="card-text text-center awards mb-3">
                                             <b className="fst-italic">Awards:</b> <br />
                                             {actor.awards.join(", ")}
                                         </p>
