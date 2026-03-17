@@ -60,7 +60,9 @@ export default function AppMain() {
 
                                         <p className="card-text text-center">{actor.biography}</p>
 
-                                        <p className="card-text text-center awards"><b>Awards</b>: <br /> {actor.awards.join(", ")}</p>
+                                        <p className="card-text text-center awards">
+                                            <b className="fst-italic">Awards</b>: <br /> {actor.awards.join(", ")}
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -89,7 +91,9 @@ export default function AppMain() {
 
                                         <p className="card-text text-center">{actorMan.biography}</p>
 
-                                        <p className="card-text text-center awards"><b>Awards</b>: <br /> {actorMan.awards.join(", ")}</p>
+                                        <p className="card-text text-center awards">
+                                            <b className="fst-italic">Awards</b>: <br /> {actorMan.awards.join(", ")}
+                                        </p>
                                     </div>
                                 </div>
                             </div>
